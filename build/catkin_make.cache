@@ -1,0 +1,2 @@
+aubo_description:aubo_robot
+-DCATKIN_DEVEL_PREFIX=/home/victor/aubo/devel -DCMAKE_INSTALL_PREFIX=/home/victor/aubo/install -G Unix Makefiles

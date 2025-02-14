@@ -1,0 +1,16 @@
+<package format="2">
+  <name>aubo_description</name>
+  <version>0.0.0</version>
+  <description>
+    Package containing URDF descriptions for the Aubo i5 robot.
+  </description>
+  <maintainer email="your_email@example.com">Your Name</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>roscpp</depend>
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  <depend>urdf</depend>
+</package>

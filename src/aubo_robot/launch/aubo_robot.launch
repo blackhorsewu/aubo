@@ -1,0 +1,19 @@
+<launch>
+  <!-- Load URDF -->
+  <param name="robot_description" 
+         command="$(find xacro)/xacro '$(find aubo_description)/urdf/aubo_i5.xacro'" />
+
+  <!-- Start robot state publisher -->
+  <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+  <!-- Start joint_state_publisher GUI (for manual joint control) -->
+  <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" />
+
+  <!-- Start Aubo Driver 
+  <node name="aubo_driver" pkg="aubo_robot" type="aubo_driver.py" output="screen"/>
+  -->
+
+  <node name="rviz" pkg="rviz" type="rviz"
+    args="-d $(find aubo_robot)/rviz/aubo_robot.rviz" />
+
+</launch>
